@@ -1,0 +1,11 @@
+In order to visualize the data we can add a "By Patient" dashboard in order to place a graph for each patient's progress.
+Assuming that each file is a database for a specific doctor, we can extract the needed data based on patient id.
+From there, we can create a simple graph with the x intercept as time/date and the y intercept as the GAD-7 scores.
+Using this graph, we can also place a threshold line to see if the patient falls below a potentially dangerous area on the scale. 
+With the graph, preferably a line graph, the doctor will be able to easily see the rise or fall of the patient as time passes.
+I suggested the line graph because with this type of graph we can easily add different types of assessments if the doctor chooses to have the patient take a series of tests.
+Currently the program does not account for any other assessments, but can be adjusted to solve this issue. It also assumes that the database is already organised by dates.
+If there are two assessments in one day, both are plotted. This can be solved my possible taking the max or  min score depending on what the doctors prefer.
+We can determine the patients growth or decline in an easy to see manner, which will save tiem for the doctors and help them decide which patients need greater help with dealing with their disorders.
+I did assume that the data file was a database for one specific doctor, but if this is not the case than having the doctor id along with the patient data will be necessary.
+Another piece of information could be a short note on what method/activity the patient did between visits. This will aid doctors to see what is helping or harming the individuals mental health.
