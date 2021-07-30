@@ -1,0 +1,27 @@
+1.
+SELECT COUNT(*)
+FROM users
+INNER JOIN exercises
+ON user.user_id = exercises.user_id AND 
+users.created_at = exercises.exercise_completion_date AND 
+exercises.exercise_id = 1 AND 
+users.created_at = input_month;
+
+2. 
+SELECT COUNT(*)
+FROM exercises
+WHERE exercise_id > input_number;
+
+// Need to account for when the user appears twice or more, but unsure about ideal approach.
+
+3.
+Select AVG(score)
+FROM (
+SELECT organization_id, organization_name, score
+FROM Providers
+RIGHT JOIN Phq9
+ON Providers.provider_id = Phq9.provider_id; 
+)
+WHERE // Every organization id
+
+// Similar problem from attempting to solve #2. 
